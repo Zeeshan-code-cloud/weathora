@@ -1,0 +1,45 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+    width="120" height="100" viewBox="0 0 120 100">
+    <defs>
+        <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFFFFF"/>
+            <stop offset="100%" stop-color="#BBD7FF"/>
+        </linearGradient>
+        <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#FFD92F"/>
+            <stop offset="100%" stop-color="#FFB900"/>
+        </linearGradient>
+        <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+            <feDropShadow dx="0" dy="3" stdDeviation="3"
+                flood-color="#071B50" flood-opacity="0.3"/>
+        </filter>
+    </defs>
+
+    <!-- Sun rays -->
+    <g stroke="#FFD52E" stroke-width="4" stroke-linecap="round">
+        <path d="M44 7 V13"/>
+        <path d="M18 18 L23 23"/>
+        <path d="M7 43 H14"/>
+        <path d="M71 18 L66 23"/>
+        <path d="M79 43 H72"/>
+    </g>
+
+    <!-- Sun -->
+    <circle cx="44" cy="40" r="23" fill="url(#sun)"/>
+
+    <!-- Cloud -->
+    <path d="M37 70
+           C25 70 19 62 19 53
+           C19 44 26 37 35 37
+           C39 24 52 20 62 27
+           C68 31 71 37 71 43
+           C82 42 91 50 91 61
+           C91 72 83 78 72 78
+           H39
+           C38 78 37 74 37 70 Z"
+        fill="url(#cloud)"
+        stroke="#D4E5FF"
+        stroke-width="2"
+        filter="url(#shadow)"/>
+</svg>
