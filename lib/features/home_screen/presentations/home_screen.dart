@@ -34,7 +34,7 @@ class HomeScreen extends GetView<HomeController> {
                     ),
                   ],
                 ),
-                SizedBox(height: 1.4.h,),
+                SizedBox(height: 1.5.h,),
                 Container(
                   width: 90.w,
                   height: 7.h,
